@@ -238,7 +238,7 @@ void add_training(const char *filename) { // fonction pour ajouter des entrainem
 }
 void athlete_summary(const char* filename, const char* type) {  // résumé des performances avec pire et meilleur temps d’un athlète pour un type d’entraînement, tel qu'enregistrer dans un fichier    
     FILE *file;
-    Time t;
+    //Time t;
     char line[256];
     double best_time = -20;  // Initialisation avec une valeur arbitrairement basse destinée à être mise à jour     
     double worst_time = 9999999; // Initialisation avec une valeur arbitrairement haute destinée à être mise à jour
@@ -336,7 +336,7 @@ void top_athletes(Athlete *athletes, int num_ath, const char* type, int num_top)
             while (fgets(line, sizeof(line), file)) { // lecture ligne par ligne
                 char temp_type[500]; 
                 char temp_time[500];
-                int temp_position;
+                //int temp_position;
                 int items_parsed = sscanf(line, "%*s ; %s ; %s ; %*d", temp_type, temp_time); // on vérifie que sscanf lit bien deux éléments avant de continuer
                 if (items_parsed == 2 && strcmp(temp_type, type) == 0) { 
                     total_time += get_time_seconds(temp_time);

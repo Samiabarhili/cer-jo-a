@@ -86,8 +86,8 @@ int main() {
 */
  // affichage de la liste des athlètes avec des numéros associés
     printf("\nAthletes list :\n");
-    for (int i = 0; i < sizeof(athletes) / sizeof(athletes[0]); i++) {
-        printf("%d. %s\n", i + 1, athletes[i].name);
+    for (long unsigned int i = 0; i < sizeof(athletes) / sizeof(athletes[0]); i++) {
+        printf("%ld. %s\n", i + 1, athletes[i].name);
     }
 
 
@@ -98,7 +98,7 @@ int main() {
         user_choice = get_int_input(); // on vérifie que ce que l’utilisateur entre est bon (comme à chaque fois)
 
         if (user_choice == 1) {
-            int athlete_choice;
+            long unsigned int athlete_choice;
             do {
                 printf("Choose the athlete that you want to check up (1 to %ld) : \n", sizeof(athletes) / sizeof(athletes[0])); // sizeof(athletes)/sizeof(athletes[0]) correspond au nombre d’athlètes au total (athlètes étant une structure..)
                 athlete_choice = get_int_input(); // vérification que le choix de l’utilisateur est bon 
@@ -228,7 +228,7 @@ int main() {
             sprintf(filename, "%s.txt", athletes[athletechoice - 1].name); // on récupère le choix de l’athlète pour ensuite ouvrir le fichier correspondant 
             file = fopen(filename, "r");
 
-            char line[100];
+            // char line[100];
             get_trainings(filename); 
 
             do {
