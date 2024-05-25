@@ -1,4 +1,4 @@
-# Définir le compilateur
+# Définir le compilateur 
 CC = gcc
 
 # Définir les options de compilation
