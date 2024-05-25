@@ -17,10 +17,6 @@ Time Constr_time() ; // fonction fonctionnant avec la structure Time : sert à r
 //Gère les erreurs d'entrées pour la date 
 Date constr_Date() ; //pour récupérer la date demandée à l'utilisateur
 
-//écrire dans le fichier d'un athlète
-//void write_training_data(const char* filename, Training* trainings, int num_trainings) ; // permet d'écrire les informations de chaque athlète dans un fichier créé à leur nom
-    
-//l'afficher
 void get_trainings(const char *filename) ;  // permet d'afficher l'historique des entraînements de l'athlète demandé
 
 //ajout d'un entraînement
@@ -29,7 +25,7 @@ void add_training(const char *filename) ; // fonction pour ajouter des entrainem
 //résumé des performances d'un athlète (pire et meilleur temps)
 void athlete_summary(const char* filename, const char* type) ;  // résumé des performances avec pire et meilleur temps d’un athlète pour un type d’entraînement, tel qu'enregistrer dans un fichier    
 
-//POUR LE TOP ON A BESOIN : 
+//pour le top on a besoin : 
 int partition(double arr[], char names[][100], int low, int high) ;
 // tri rapide, fait un tableau en deux parties autour d'un pivot tel que les éléments à gauche du pivot soient plus petits ou égaux au pivot, et ceux à droite soient plus grands
 void quicksort(double arr[], char names[][100], int low, int high) ; // sert à faire du tri rapide (utilisation d’un pivot (pi) + trie de manière récursive) 
