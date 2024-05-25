@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "structures.h"
+// #include "structures.h" pense pas nécessaire puisque include dans function.h
 #include "function.h"
 
 int main() {
