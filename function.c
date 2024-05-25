@@ -110,22 +110,7 @@ Date constr_Date(){ //pour récupérer la date demandée à l'utilisateur
     } while (x.days < 1 || x.days > verifdays || x.month < 1 || x.month > 12 || x.year < 0 || x.year > 2024);
     return x;
 }
-          
-/*void write_training_data(const char* filename, Training* trainings, int num_trainings) {// permet d'écrire les informations de chaque athlète dans un fichier créé à leur nom
-    FILE *file = fopen(filename, "w"); // ouverture du fichier pour écrire dans celui-ci
-    if (file == NULL) {
-        printf("Error while opening the file %s.\n", filename);
-        return;
-    }
-    
-    for (int i = 0; i < num_trainings; i++) {
-         if(strcmp(trainings[i].type, "Relay4x400m")==0){
-        fprintf(file, "%s ; %s ; %s ; %d\n", trainings[i].date, trainings[i].type, trainings[i].time, trainings[i].position);
-         }
-        else {fprintf(file, "%s ; %s ; %s\n", trainings[i].date, trainings[i].type, trainings[i].time);
-    }}
-    fclose(file);
-}*/
+
 
 void get_trainings(const char *filename) {  // permet d'afficher l'historique des entraînements de l'athlète demandé
     FILE *file;
