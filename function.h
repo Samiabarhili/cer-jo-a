@@ -1,6 +1,8 @@
 #ifndef FUNCTION_H
 #define FUNCTION_H
 
+#include "structures.h"
+
 double get_time_seconds(const char* time) ; // récupère le temps du joueur dans le format demandé et convertit en secondes
 
 //gestion des entrées de l'utilisateur 
