@@ -18,7 +18,7 @@ Time Constr_time() ; // fonction fonctionnant avec la structure Time : sert à r
 Date constr_Date() ; //pour récupérer la date demandée à l'utilisateur
 
 //écrire dans le fichier d'un athlète
-void write_training_data(const char* filename, Training* trainings, int num_trainings) ; // permet d'écrire les informations de chaque athlète dans un fichier créé à leur nom
+//void write_training_data(const char* filename, Training* trainings, int num_trainings) ; // permet d'écrire les informations de chaque athlète dans un fichier créé à leur nom
     
 //l'afficher
 void get_trainings(const char *filename) ;  // permet d'afficher l'historique des entraînements de l'athlète demandé

@@ -14,7 +14,7 @@ int main() {
         {"Dahmane"},
         {"Hicham"}
     };
-
+/*
    // données d'entraînement pour chaque athlète
     Training hari_trainings[] = {
         {"2024-05-01" , "100m" , "00h00m12.5s" },
@@ -83,7 +83,7 @@ int main() {
     write_training_data("Amine.txt", amine_trainings, sizeof(amine_trainings) / sizeof(amine_trainings[0]));
     write_training_data("Dahmane.txt", dahmane_trainings, sizeof(dahmane_trainings) / sizeof(dahmane_trainings[0]));
     write_training_data("Hicham.txt", hicham_trainings, sizeof(hicham_trainings) / sizeof(hicham_trainings[0]));
-
+*/
  // affichage de la liste des athlètes avec des numéros associés
     printf("\nAthletes list :\n");
     for (int i = 0; i < sizeof(athletes) / sizeof(athletes[0]); i++) {
