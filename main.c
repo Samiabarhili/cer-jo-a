@@ -141,7 +141,7 @@ int main() {
 
     int choice_progress;// variable pour stocker le choix de l'utilisateur (1 ou 2)
     int athletechoice;  // variable pour stocker le choix de l'athlète (1 à 5)
-    FILE* file;
+    FILE* file = NULL;
     char filename[100];
     char typetraining[100];
     int choice4;
@@ -158,6 +158,10 @@ int main() {
 
             sprintf(filename, "%s.txt", athletes[athletechoice - 1].name); // on récupère le choix de l’athlète pour ensuite ouvrir le fichier correspondant 
             file = fopen(filename, "r");
+            if (file == NULL) {
+            printf("Failed to open file %s\n", filename);
+            continue;
+            }
 
             // char line[100];
             get_trainings(filename); 
@@ -199,7 +203,13 @@ int main() {
             athlete_progression(filename, typetraining, date1, date2); // on renvoie vers la fonction pour calculer la progression 
         }
     } while (choice_progress != 2);
+
+    if(file != NULL){
+        fclose(file);
+    }
+
 printf("\n\n\n\n\n\n\nGoodbye, see you soon ! :D\n");
-    fclose(file);
+
+   // fclose(file);
     return 0;
 }
