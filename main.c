@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "structures.h" 
 #include "function.h"
 
 int main() {
@@ -208,7 +207,7 @@ int main() {
         fclose(file);
     }
 
-printf("\n\n\n\n\n\n\nGoodbye, see you soon ! :D\n");
+printf("\n\n\n\n\n\n\n\n\nGoodbye, see you soon ! :D\n");
 
    // fclose(file);
     return 0;

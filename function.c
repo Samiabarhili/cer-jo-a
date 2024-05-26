@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-//#include "strutures.h" //jsp si nécessaire puisque déjà include dans function.h
 #include "function.h"
 
 
